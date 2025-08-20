@@ -1,0 +1,28 @@
+{
+  "website": {
+    "name": "K.C LiveScore",
+    "url": "https://www.K.C_Livescore.com",
+    "logo": "./assets/logo.png",
+    "tagline": "Your #1 source for real-time soccer scores",
+    "description": "LiveScore Arena provides real-time football scores, results, fixtures, standings, and news from major leagues around the world. Stay updated with live match commentary and team details.",
+    "keywords": [
+      "soccer",
+      "football",
+      "live scores",
+      "standings",
+      "sports news"
+    ],
+    "contact": {
+      "email": "support@K.Clivescore.com",
+      "phone": ""
+         },
+    "socials": {
+      "youtube": "https://youtube.com/livescorearena"
+    },
+    "developer": {
+      "name": "Philip Willson/360k Minds",
+      "website": "https://www.PhilipWiillson.com",
+      "email": "abonyiogugua.1@gmail.com"
+    }
+  }
+}

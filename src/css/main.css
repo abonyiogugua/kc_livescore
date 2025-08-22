@@ -42,56 +42,6 @@
    font-style: normal;
  }
 
- /*==========prealoder========================*/
- .loader {
-   position: fixed;
-   z-index: 999;
-   top: 0;
-   left: 0;
-   background-color: var(--secondary-color);
-   height: 100%;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   align-items: center;
- }
-
- .disapear {
-   animation: vanish 4s forwards;
- }
-
- @keyframes vanish {
-   100% {
-     opacity: 0;
-     visibility: hidden;
-   }
- }
-
- #loader_txt {
-   text-align: center;
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   stroke: var(--light-mode);
-   font-size: 3.3rem;
-   text-shadow: var(--header-text-shadow);
-   font-weight: bold;
-   stroke-width: 2;
-   animation: textanimate 3s infinite alternate;
- }
-
- @keyframes textanimate {
-   0% {
-     stroke-dasharray: 50% 0;
-     stroke-dashoffset: 20%;
-   }
-
-   100% {
-     stroke-dasharray: 0 50%;
-     stroke-dashoffset: -20%;
-   }
- }
-
- /*==========preloader end========================*/
  
  /*==========page effect========================*/
 .page_effect{
@@ -111,11 +61,15 @@ animation: effect2 1s ease-in-out forwards;
     transition: 2s;
     background-color: var(--light-mode);  
 }
+.active2{
+   border-radius: 10px;
+   padding: 10px;  
+  transition: 2s;
+    background-color: var(--light-mode);  
+
+  }
+
 /*==========active effect end========================*/
-
-
-
- 
 
  main {
    display: flex;
@@ -207,11 +161,14 @@ animation:rotation1 10s linear infinite ;
    background-color: var(--secondary-color);
    box-shadow: var(--box-shadows);
  }
-
+#ham_close{
+  display: none;
+}
  #navs {
    display: flex;
    gap: 30px;
    margin-left: 850px;
+   animation: none;
  }
 
  #navs a {
@@ -254,7 +211,6 @@ animation:rotation1 10s linear infinite ;
 
  /* ==============live score Section end========== */
 
-
  /* ==============leauge Section ========== */
 
  #leauges_section {
@@ -262,64 +218,44 @@ animation:rotation1 10s linear infinite ;
  }
 
  .leauge_contents {
-  text-align: center;
-      height: 700px;
-   overflow-y: scroll;
-   margin: 5px;
-
- }
-
- #leauges_section h1 {
+  margin-top: 20px;
    text-align: center;
-   color: var(--secondary-color);
-   font-size: 2.3rem;
-   text-shadow: var(--text-shadows);
-   margin-top: 20px;
+     height: 800px;
+   overflow-y: scroll;
+
  }
-
-
  .leauge_contents iframe {
-   margin: 2px;
-   height: 590px;
-   border-radius: 10px;
-   width: 99%;
-   border: none;
- }
-
-
- /* ==============leauge Section end========== */
-
- /* ==============standing section========== */
-
- #standing_section {
-   display: none;
- }
-
- .standing_contents {
-   text-align: center;
-     height: 700px;
-   overflow-y: scroll;
-  }
-
- #standing_section h1 {
-   text-align: center;
-   color: var(--secondary-color);
-   font-size: 2.3rem;
-   text-shadow: var(--text-shadows);
-   margin-top: 20px;
- }
-
- .standing_contents iframe {
-   margin: 5px;
-   height: 590px;
+  margin: 20px;
+   height: 690px;
    border-radius: 10px;
    width: 97%;
    border: none;
  }
+ /* ==============leauge Section end========== */
+ 
+ /* ==============live Section ========== */
+#live_section {
+   display: none;
+ }
 
- /* ==============standing section end========== */
+ .live_contents {
+  margin-top: 30px;
+   text-align: center;
+     height: 800px;
+   overflow-y: scroll;
+  }
 
- /* ============team section================= */
+ .live_contents iframe {
+   margin: 20px;
+   height: 690px;
+   border-radius: 10px;
+   width: 97%;
+   border: none;
+   
+ }
+ /* ==============live Section end========== */
+
+/* ============team section================= */
 
  #team_section {
    display: none;
@@ -335,12 +271,11 @@ animation:rotation1 10s linear infinite ;
 
  }
 
- .search-container {
-   text-align: center;
-   margin-bottom: 20px;
+ .search_tools{
+  text-align: center;
  }
-
- #team-search {
+ 
+ #searchInput {
    width: 300px;
    margin-bottom: 60px;
    padding: 10px;
@@ -373,39 +308,27 @@ animation:rotation1 10s linear infinite ;
    fill: var(--secondary-color);
    transition: 2s;
    }
- }
-
- #team-info {
-   max-width: 700px;
-   margin: 20px auto;
-   background: var(--secondary-color);
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: var(--box-shadows);
-   text-align: center;
- }
-
- #team-info img {
-   filter: var(--img-filters);
-   width: 100px;
-   height: auto;
-   margin-bottom: 10px;
- }
-
- .team-details {
-   margin-top: 20px;
-   text-align: left;
- }
-
- #team_section strong {
-   color: var(--btn-color);
- }
-
- .team-details p {
-   margin: 10px 0;
-   font-size: 1.1em;
-   color: var(--light-mode);
- }
+ } 
+       .team-profile {
+           margin: 20px auto;
+           width: 400px;
+            border: 1px solid var(--secondary-color);
+             padding: 20px;
+              border-radius: 10px;
+               display: none;
+               }
+        .team-profile img { 
+          width: 100px; 
+        }
+        .venue-img { 
+          width: 100%;
+           height: auto; 
+           margin-top: 10px;
+            border-radius: 10px;
+           }
+        .info { 
+          margin: 10px 0; 
+        }
 
  /* ============team section end================= */
 
@@ -438,57 +361,13 @@ animation:rotation1 10s linear infinite ;
    margin-top: 20px;
  }
 
- .news-item {
-   background: var(--light-mode);
-   border-radius: 10px;
-   margin: 10px;
-   overflow: hidden;
-   box-shadow: var(--box-shadows);
-   display: flex;
-   flex-direction: column;
- }
 
- .news-item img {
-   width: 100%;
-   height: 180px;
-   object-fit: cover;
- }
-
- .news-content {
-   padding: 15px;
-   flex: 1;
-   display: flex;
-   flex-direction: column;
- }
-
- .news-content h2 {
-   font-size: 1.2em;
-   margin: 0 0 10px;
-   color: var(--secondary-color);
- }
-
- .news-content p {
-   flex: 1;
-   font-size: 0.95em;
-   color: var(--light-mode);
- }
-
- .read-more {
-   display: inline-block;
-   margin-top: 10px;
-   background: var(--btn-color);
-   color: var(--light-mode);
-   padding: 8px 12px;
-   border-radius: 5px;
-   text-decoration: none;
-   font-size: 0.9em;
-   transition: background 0.3s;
-
-   &:hover {
-     background: var(--hover-color);
-     transition: 2s;
-   }
- }
+  .news-card { border: 1px solid #ddd; padding: 10px; margin: 10px; width: 300px; border-radius: 10px; text-align: left; }
+        .news-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+       
+        .news-title { font-weight: bold; margin: 10px 0; font-size: 16px; }
+       
+        .news-source { font-size: 12px; color: #777; }
 
  /* ============news section end================= */
 
@@ -767,11 +646,15 @@ animation:rotation1 10s linear infinite ;
  header {
   top: 0px;
   position: fixed;
-   margin-left: 5px;
+   margin-left: 0px;
    gap: 175px;
    padding: 10px;
    z-index: 10;
+   left: 5px;
+  border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
   }
+
 .hambuger_menu{
   display: block;
   padding: 10px;
@@ -785,33 +668,52 @@ animation:rotation1 10s linear infinite ;
     border: none;
   }
 #ham_close{
-  display: none;
+  display: block;
+  padding: 10px;
+}
+
+#navs li:nth-child(1){
+  margin-top: 100px;
+  
 }
 
 #navs li{
-  margin: 20px;
+  margin: 40px;
+  
 }
+#nav1 svg {
+   width: 40px;
+   height: 40px;
+ }
+
  
 #nav1{
   display: none;
 }
  #navs {
   position: fixed;
-  top: 39px;
-  right: 16px;
+  top: 49px;
+  height: 300px;
+  width: 80%;
+  right: -60px;
    background-color: var(--secondary-color);
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
    display: block;
    gap:0px;
+   z-index: 9;
    margin-left: 0px;
+   animation: slide1 60ms linear;
  }
+@keyframes slide1{
+  100%{transform: translateX(-10px);}
+}
 
  #navs a {
    color: var(--primary-color);
    font-weight: bold;
-   padding: 10px;
-   font-size: x-large;
+   padding: 2px;
+   font-size: large;
    text-shadow: var(--text-shadows);
    &:hover {
      color: var(--hover-color);
@@ -832,10 +734,27 @@ animation:rotation1 10s linear infinite ;
  /* ==============navigation end========== */
 
 
+/* ==============leauge Section ========== */
+
+ .home_contents {
+      height: 809px; 
+      margin: 0px;
+ }
+
+ .livescore-widget {
+   margin: 20px;
+   margin-top: 70px;
+   width: 550px;
+   height: 490px;
+  }
+
+ /* ==============leauge Section end========== */
+
+
  /* ==============leauge Section ========== */
 
  .leauge_contents {
-      height: 709px; 
+      height: 809px; 
       margin: 0px;
  }
 
@@ -845,33 +764,15 @@ animation:rotation1 10s linear infinite ;
 
 
  .leauge_contents iframe {
-   margin: 5px;
-   width: 350px;
+   margin: 20px;
+   margin-top: 70px;
+   width: 550px;
    height: 490px;
   }
 
 
  /* ==============leauge Section end========== */
 
-/* ==============standing section========== */
-
-  .standing_contents {
-      height: 709px; 
-      margin: 0px;
- }
-
- #standing_section h1 {
-    margin-top: 60px;
- }
-
-
- .standing_contents iframe {
-   margin: 5px;
-   height: 490px;
-   width: 350px;
-  }
-
- /* ==============standing section end========== */
 
  /* ============team section================= */
 
@@ -901,10 +802,35 @@ animation:rotation1 10s linear infinite ;
 
   /* ============team section end================= */
 
+ /* ==============live Section ========== */
+
+ .live_contents {
+      height: 809px; 
+      margin: 0px;
+ }
+
+ #live_section h1 {
+    margin-top: 60px;
+ }
+
+
+ .live_contents iframe {
+   margin: 20px;
+   margin-top: 70px;
+   width: 550px;
+   height: 490px;
+  }
+
+
+ /* ==============live Section end========== */
+
+
+
+
 /* ============news section================= */
 
  #news_section h1 {
-     margin-top: 50px;
+     margin-top: 100px;
  }
 
  .news_content {
@@ -920,14 +846,14 @@ animation:rotation1 10s linear infinite ;
  /* ============about section================= */
 
  #about_section h1 {
-   margin-top: 50px;
+   margin-top: 100px;
  }
  /* ============about section end================= */
 
 
  /* ============contact section================= */
  #cont_title {
-   margin-top: 60px;
+   margin-top: 100px;
  }
  .form_inputs{
   margin: 2px;
@@ -987,22 +913,18 @@ margin-right: 80px;
  /* ============terms section================= */
  #terms_section h1 {
    font-size: 2.1rem;
-   margin-top: 60px;
+   margin-top: 100px;
+   margin-bottom: 0px;
  }
 
  #terms_section p {
    text-align: left;
+   margin-top: 0px;
    margin: 20px;
    font-size: 1.2rem;
  margin-bottom: 70px;
  }
  
  /* ============terms section end================= */
-
-
-
-
-
-
 }
- /*===========mobile Responsive================ */
+ /*===========mobile Responsive end================ */

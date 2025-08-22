@@ -34,12 +34,6 @@
 
 <body>
   <!--==============main page==========-->
-  <!--------preloader----------->
-  <div class="loader">
-
-    <svg view Box="0 0 1350 600"><text id="loader_txt" x="5%" y="100%" fill="transparent">K.C Livescore</text></svg>
-  </div>
-  <!--------preloader end----------->
 
   <main>
     <!--==============first section ==========-->
@@ -58,15 +52,14 @@
               <path
                 d="m14.09 16h.91c6.643 0 9-3.5 9-6.5a3.5 3.5 0 0 0 -2.84-3.433 7.564 7.564 0 0 0 .409-1 3.887 3.887 0 0 0 -.626-3.458 3.979 3.979 0 0 0 -3.214-1.609h-11.458a3.979 3.979 0 0 0 -3.214 1.612 3.887 3.887 0 0 0 -.626 3.458 7.564 7.564 0 0 0 .409 1 3.5 3.5 0 0 0 -2.84 3.43c0 3 2.357 6.5 9 6.5h.91a5.027 5.027 0 0 1 .09.921v3.079a1.883 1.883 0 0 1 -2 2h-2a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2h-1.994a1.885 1.885 0 0 1 -2.006-2v-3.08a5.025 5.025 0 0 1 .09-.92zm1.636-2.851a23.486 23.486 0 0 0 4.4-5.225 1 1 0 0 0 .374.076 1.5 1.5 0 0 1 1.5 1.5c0 2.176-1.839 4.5-7 4.5h-.056a4.805 4.805 0 0 1 .782-.851zm-6.726.851c-5.161 0-7-2.324-7-4.5a1.5 1.5 0 0 1 1.5-1.5 1 1 0 0 0 .375-.076 23.486 23.486 0 0 0 4.4 5.225 4.805 4.805 0 0 1 .781.851z" />
             </svg>
-            <p>leauges</p>
+            <p>leauges & standings</p>
           </a>
         </li>
-        <li><a href="#standing_section"  class="nav_link"  onclick="standing1()"><svg id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
-              <path
-                d="m12,14c-1.103,0-2-.897-2-2s.897-2,2-2,2,.897,2,2-.897,2-2,2ZM3,10H0v4h3v-4Zm18,4h3v-4h-3v4Zm-2,0v-4c0-1.103.897-2,2-2h3c0-2.757-2.243-5-5-5h-6v5.142c1.72.447,3,1.999,3,3.858s-1.28,3.411-3,3.858v5.142h6c2.757,0,5-2.243,5-5h-3c-1.103,0-2-.897-2-2Zm-8,1.858c-1.72-.447-3-1.999-3-3.858s1.28-3.411,3-3.858V3h-6C2.243,3,0,5.243,0,8h3c1.103,0,2,.897,2,2v4c0,1.103-.897,2-2,2H0c0,2.757,2.243,5,5,5h6v-5.142Z" />
-            </svg>
-            <p>Standings</p>
+          <li><a href="#live_section"  class="nav_link"  onclick="live1()"> 
+            <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m15.081 13.184-4.067 2.288c-.906.51-2.025-.145-2.025-1.184v-4.575c0-1.039 1.119-1.694 2.025-1.184l4.067 2.288c.923.519.923 1.849 0 2.369zm-10.156-8.259c.391-.391.391-1.024 0-1.415s-1.024-.391-1.415 0c-4.68 4.681-4.68 12.299 0 16.98.391.391 1.024.391 1.415 0s.391-1.024 0-1.415c-3.9-3.901-3.9-10.249 0-14.15zm15.565-1.415c-.391-.391-1.024-.391-1.415 0s-.391 1.024 0 1.415c3.9 3.901 3.9 10.249 0 14.15-.391.391-.391 1.024 0 1.415s1.024.391 1.415 0c4.681-4.681 4.681-12.298 0-16.979zm-12.735 2.83c-.391-.391-1.024-.391-1.415 0-1.512 1.511-2.344 3.521-2.344 5.66s.832 4.148 2.344 5.66c.391.391 1.024.391 1.415 0s.391-1.024 0-1.415c-1.134-1.134-1.758-2.641-1.758-4.245s.624-3.111 1.758-4.245c.391-.39.391-1.024 0-1.415zm9.905 0c-.391-.391-1.024-.391-1.415 0s-.391 1.024 0 1.415c1.134 1.134 1.758 2.641 1.758 4.245s-.624 3.111-1.758 4.245c-.391.39-.391 1.024 0 1.415s1.024.391 1.415 0c1.512-1.511 2.344-3.521 2.344-5.66s-.832-4.148-2.344-5.66z"/></svg>
+            <p>Live</p>
           </a></li>
+ 
         <li><a href="#team_section"  class="nav_link"  onclick="team1()"> <svg height="24px" viewBox="0 -960 960 960" width="24px"
               fill="#e8eaed">
               <path
@@ -94,7 +87,7 @@
         <div class="logo"><img src="./assets/logo.png" alt="logo" draggable="false"></div>
         <!-------- logo end----------->
        <!-- ======hamburger menu ===========-->
-
+     
            <div class="hambuger_menu">
           <button id="hamburger"> 
 <svg  id="ham_open" width="152px" height="75px" viewBox="0 0 152 75" version="1.1" >
@@ -104,17 +97,19 @@
     <path d="M0 44L152 44L152 53L0 53L0 44Z" id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
     <path d="M0 66L152 66L152 75L0 75L0 66Z" id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
   </g>
-</svg>  <svg  id="ham_close"   height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>   </button>
+</svg>   </button>
           </div>
        <!-- ======hamburger end menu ===========-->
 
        <!--------nav btn----------->
        
           <div id="nav1">
+           
         <nav id="navs">
-          <li><a href="#about_section"  onclick="about1()">About</a></li>
-          <li><a href="#contact_section" onclick="contact1()">Contact</a></li>
-          <li><a href="#terms_section" onclick="terms1()">Terms</a></li>
+          <svg  id="ham_close"   height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          <li class="nav_link2" ><a href="#about_section"    onclick="about1()">About</a></li>
+          <li  class="nav_link2" ><a href="#contact_section"  onclick="contact1()">Contact</a></li>
+          <li class="nav_link2" ><a href="#terms_section"   onclick="terms1()">Terms</a></li>
         </nav>
         </div>
         <!--------nav btn end----------->
@@ -138,101 +133,74 @@
 
       <!--==============livescore Section end==========-->
 
-      <!--==============leauge Section ==========-->
+      <!--==============leauge & standing Section ==========-->
       <section id="leauges_section">
-        <h1>Soccer Leauges</h1>
         <!--========leauge btns ======  -->
 
         <div class="leauge_contents">
         
           <!--========leauge pages======  -->
           
-
-             <iframe rel="nofollow" src="https://sportsloci.com/widgets/live-scores-no/1204/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1399/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1269/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1229/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe><br>
-    <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1221/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-           <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1005/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-              <iframe rel="nofollow" src="https://sportsloci.com/widgets/live-scores-no/1007/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1440/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1308/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe><br>
-    <iframe rel="nofollow" src="https://sportsloci.com/widgets/live-scores-no/1322/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe><br>
-    <iframe rel="nofollow" src="https://sportsloci.com/widgets/live-scores-no/1352/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe><br>
-              <iframe rel="nofollow" src="https://sportsloci.com/widgets/live-scores-no/1457/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe><br>
-        <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1425/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-    <iframe rel="nofollow" src="https://sportsloci.com/widgets/live-scores-no/1326/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-      <iframe rel="nofollow"src="https://sportsloci.com/widgets/live-scores-no/1279/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> <br>
-        
+<iframe src="https://www.scorebat.com/embed/livescore/?token=MjI3NTQ3XzE3NTU3MDQzMTBfZTFlNTQ3NGFiNjE5NTJmM2VkZjg5NzZkYmQzMWY5NGU5ZGM5NmQ1YQ==" frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen' style="width:100%;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe>
 
           </div>
           <!--========leauge pages end======  -->
       </section>
-      <!--==============leauge Section  end==========-->
+      <!--==============leauge & standing Section  end==========-->
 
 
-      <!--==============standing section==========-->
-      <section id="standing_section">
+      
+<!--==============live  section==========-->
 
-        <h1>Soccer Standing</h1>
-        
-          <!--========leauge pages======  -->
-          <div class="standing_contents">
+<section id="live_section">
 
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1204/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1399/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-          <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1269/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> 
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1229/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe> 
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1221/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1005/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>         
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1007/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1440/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1440/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1322/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1352/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-            <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1457/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1425/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1326/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-              <iframe rel="nofollow"src="https://sportsloci.com/widgets/league-standings-no/1279/rgb(26, 26, 26)?backgroundColor=rgb(255, 255, 255)"></iframe>
-            </div>
-          <!--========leauge pages end======  -->
+<div class="live_contents">
+    <iframe src="https://www.scorebat.com/embed/videofeed/?token=MjI3NTQ3XzE3NTU3MDQzMTBfZTFlNTQ3NGFiNjE5NTJmM2VkZjg5NzZkYmQzMWY5NGU5ZGM5NmQ1YQ==" frameborder="0" allowfullscreen allow='autoplay; fullscreen' style="width:100%;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe>
+     
+</div>
+
+</section>
+<!--==============live  section end==========-->
 
 
-      </section>
-      <!--==============standing Section  end==========-->
 
       <!--==============team Section ==========-->
       <section id="team_section">
 
-        <h1>⚽ Search Soccer Team</h1>
 
-        <div class="team_contents">
-          <div class="search-container">
-            <input type="text" id="team-search" placeholder="Enter team name...">
-            <button id="search-btn">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:new 0 0 513.749 513.749;" xml:space="preserve" width="512" height="512">
+<h1>Search Team Profile</h1>
+
+<div class="search_tools">
+    <input type="text" id="searchInput" placeholder="Enter Team Name">
+    <button onclick="searchTeam()" id="search-btn" ><svg  version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.749 513.749" style="enable-background:new 0 0 513.749 513.749;" xml:space="preserve" width="512" height="512">
 <g>
 	<path d="M504.352,459.061l-99.435-99.477c74.402-99.427,54.115-240.344-45.312-314.746S119.261-9.277,44.859,90.15   S-9.256,330.494,90.171,404.896c79.868,59.766,189.565,59.766,269.434,0l99.477,99.477c12.501,12.501,32.769,12.501,45.269,0   c12.501-12.501,12.501-32.769,0-45.269L504.352,459.061z M225.717,385.696c-88.366,0-160-71.634-160-160s71.634-160,160-160   s160,71.634,160,160C385.623,314.022,314.044,385.602,225.717,385.696z"/>
 </g>
 </svg>
-</button>
-          </div>
+  Search</button>
+  </div>
 
-          <div id="team-info"></div>
-        </div>
+    <div class="team_contents">  
+        <div id="teamProfile" class="team-profile">
+        <!-- Team Profile Data will load here -->
+    </div>
+    </div>
+
 
 
       </section>
       <!--==============team Section end==========-->
 
+
+
+      
       <!--==============news Section ==========-->
       <section id="news_section">
 
         <h1>🏆 Latest Sports News</h1>
 
         <div class="news_content">
-
-          <div class="news-container" id="news-container"></div>
+<div id="newsList" class="news-container">
 
         </div>
 

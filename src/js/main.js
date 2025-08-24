@@ -20,6 +20,12 @@ navLinkEls2.forEach(navLinkEls2 =>{
 
 //================== active class end================//
 
+//================== menu button================//
+
+
+//================== menu button end================//
+
+
 //================== hamburger button================//
 const hamburger_btn = document.getElementById("hamburger");
 const ham_close = document.getElementById("ham_close");
@@ -171,7 +177,7 @@ fjs.parentNode.insertBefore(js, fjs);
 
 
 //================== team section================//
-const API_KEY1 = '5f76f3a07d900ee1751203c003111b37'; 
+const API_KEY = '5f76f3a07d900ee1751203c003111b37'; 
 
 async function searchTeam() {
   const query = document.getElementById('searchInput').value.trim();
@@ -183,7 +189,7 @@ async function searchTeam() {
   const response = await fetch(`https://v3.football.api-sports.io/teams?search=${query}`, {
     method: 'GET',
     headers: {
-      'x-apisports-key': API_KEY1
+      'x-apisports-key': API_KEY
     }
   });
   
@@ -218,44 +224,3 @@ function displayTeamProfile(team, venue) {
 }
 //================== team section end================//
 
-//================== news section ================//
- const API_KEY = '221a9348cdf44b1b8440e097c7988fee';  
-const REFRESH_INTERVAL = 60000;  
-async function fetchSportsNews() {
-    const response = await fetch(`https://newsapi.org/v2/top-headlines?category=sports&language=en&pageSize=10&apiKey=${API_KEY}`);
-    const data = await response.json();
-
-    if (data.status !== "ok") {
-        console.error("Failed to fetch news:", data);
-        return;
-    }
-
-    displayNews(data.articles);
-}
-
-function displayNews(articles) {
-    const container = document.getElementById('newsList');
-    container.innerHTML = '';  // Clear previous news
-
-    articles.forEach(article => {
-        const newsCard = document.createElement('div');
-        newsCard.className = 'news-card';
-
-        newsCard.innerHTML = `
-            <img src="${article.urlToImage || 'https://via.placeholder.com/300x180'}" alt="News Image">
-            <div class="news-title">${article.title}</div>
-            <div class="news-source">${article.source.name} - ${new Date(article.publishedAt).toLocaleDateString()}</div>
-            <a href="${article.url}" target="_blank">Read Full Article</a>
-        `;
-
-        container.appendChild(newsCard);
-    });
-}
-
-// Initial Load
-fetchSportsNews();
-
-// Auto Refresh every 60 seconds
-setInterval(fetchSportsNews, REFRESH_INTERVAL);
- 
-//================== news section end================//

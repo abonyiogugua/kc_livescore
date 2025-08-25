@@ -210,16 +210,16 @@ function displayTeamProfile(team, venue) {
   container.style.display = 'block';
   
   container.innerHTML = `
-        <img src="${team.logo}" alt="${team.name}">
-        <h2>${team.name}</h2>
-        <div class="info"><strong>Country:</strong> ${team.country}</div>
-        <div class="info"><strong>Founded:</strong> ${team.founded}</div>
+        <img src="${team.logo}" alt="${team.name}" draggable="false" >
+        <h2 style="color:white;" >${team.name}</h2>
+        <div class="info" style="color:white;"  ><strong style="color:goldenrod ;" >Country:</strong> ${team.country}</div>
+        <div class="info"  style="color:white;" ><strong style="color:goldenrod ;" >Founded:</strong> ${team.founded}</div>
         <hr>
-        <h3>Venue Info</h3>
-        <div class="info"><strong>Name:</strong> ${venue.name}</div>
-        <div class="info"><strong>City:</strong> ${venue.city}</div>
-        <div class="info"><strong>Capacity:</strong> ${venue.capacity}</div>
-        <img src="${venue.image}" alt="${venue.name}" class="venue-img">
+        <h3 style="color:goldenrod ;" >Venue Info</h3>
+        <div class="info" style="color:white;" ><strong style="color:goldenrod ;" >Name:</strong> ${venue.name}</div>
+        <div class="info" style="color:white;" ><strong style="color:goldenrod ;" >City:</strong> ${venue.city}</div>
+        <div class="info"  style="color:white;" ><strong style="color:goldenrod ;" >Capacity:</strong> ${venue.capacity}</div>
+        <img src="${venue.image}" alt="${venue.name}" class="venue-img"  draggable="false" >
     `;
 }
 //================== team section end================//

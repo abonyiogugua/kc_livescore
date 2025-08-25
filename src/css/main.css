@@ -571,6 +571,8 @@ filter: var(--img-filters);
  }
  #first_section nav{
   display: flex;
+  justify-content: center;
+  align-items: center;
  }
  #first_section li {
    margin-left: 0px;
@@ -721,7 +723,8 @@ animation:rotation1 10s linear infinite ;
 /* ==============leauge Section ========== */
 
  .home_contents {
-      height: 809px; 
+      height: 700px;
+      overflow-x: scroll; 
       margin: 0px;
  }
 
@@ -740,6 +743,7 @@ animation:rotation1 10s linear infinite ;
  .leauge_contents {
       height: 809px; 
       margin: 0px;
+      overflow-x: scroll;
  }
 
  #leauges_section h1 {
@@ -792,6 +796,7 @@ animation:rotation1 10s linear infinite ;
  .live_contents {
       height: 809px; 
       margin: 0px;
+      
  }
 
  #live_section h1 {
@@ -809,8 +814,6 @@ animation:rotation1 10s linear infinite ;
  /* ==============live Section end========== */
 
 
-
-
 /* ============news section================= */
 
  #news_section h1 {
@@ -819,7 +822,7 @@ animation:rotation1 10s linear infinite ;
 
  .news_content {
    text-align: center;
-   height: 660px;
+   height: 809px;
    margin: 10px;
    overflow-y: scroll;
  }

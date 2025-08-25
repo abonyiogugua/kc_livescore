@@ -726,7 +726,7 @@ animation:rotation1 10s linear infinite ;
       height: 700px;
       overflow-x: scroll; 
       margin: 0px;
-      width: 550px;
+      width: 100%;
  }
 
  

@@ -727,7 +727,9 @@ animation:rotation1 10s linear infinite ;
       overflow-x: scroll; 
       margin: 5px;
  }
-
+.livescore-widget{
+  width: 500px;
+}
  
  /* ==============leauge Section end========== */
 

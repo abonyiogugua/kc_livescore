@@ -1,179 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--==============website title==========-->
-  <title>kc Livescore</title>
-  <!--==============website title end==========-->
-
-  <!--==============website icon==========-->
-  <link rel="icon" href="./assets/logo.png" type="image/png" />
-  <!--==============website icon end==========-->
-
-  <!--==============link css==========-->
-  <link rel="stylesheet" href="./src/css/styles.css" />
-<!--==============link css end==========-->
-
-  <!--------google fonts----------->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gravitas+One&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Satisfy&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-
-  <!--------google fonts end----------->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>k.c Livescore</title>
+<link rel="icon" href="./assets/logo.png">
+<link rel="stylesheet" href="./src/css/index.css">
 </head>
-
 <body>
-  <!--==============main page==========-->
+  <header><img src="./assets/logo.png" alt="logo"> 
+  
+    <marquee scrollamount="2" ><h1>Welcome to K.C Livescore Your N0.1 Place For Soccer Updates</h1></marquee>
+  
+  </header>
 
   <main>
-    <!--==============home menu section ==========-->
+    <!-- Pages -->
+    <div id="livescore" class="page active">
+      <br>
+      
+      <div id="ls-widget" data-w="w_default" class="livescore-widget"></div>
+  
+    </div>
+<br> <br>
+    <div id="leagues" class="page"> 
+    <iframe src="https://www.scorebat.com/embed/livescore/?token=MjI3NTQ3XzE3NTU3MDQzMTBfZTFlNTQ3NGFiNjE5NTJmM2VkZjg5NzZkYmQzMWY5NGU5ZGM5NmQ1YQ==" frameborder="0" width="100%" height="760px" allowfullscreen allow='autoplay; fullscreen' style="width:100%;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe>
+  
+    </div>
+
+    <div id="live" class="page"> <br>
+   <iframe src="https://www.scorebat.com/embed/videofeed/?token=MjI3NTQ3XzE3NTU3MDQzMTBfZTFlNTQ3NGFiNjE5NTJmM2VkZjg5NzZkYmQzMWY5NGU5ZGM5NmQ1YQ==" frameborder="0" allowfullscreen allow='autoplay; fullscreen' style="width:100%;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe>
     
-    <!--==============home menu section end ==========-->
+    </div>
 
-    <!--==============first section ==========-->
-    <section id="first_section">
-      
-      <div class="banner"><img src="./assets/logo.png" alt="logo"   draggable="false"></div>
-      <div id="main_menu1">
-      <nav>
-        <li><a href="#livescore_section"  class="nav_link  active "  onclick="livescore1()"  > <svg id="Layer_1" height="512" viewBox="0 0 24 24"
-              width="512" data-name="Layer 1">
-              <path
-                d="m.024 11.523a11.943 11.943 0 0 1 2.731-7.164l1.106 3.6a1 1 0 0 1 -.382 1.114zm11.39-8.712a1 1 0 0 0 1.174 0l3.039-2.248a11.948 11.948 0 0 0 -7.28.01zm9.1 6.256 3.457 2.456a11.943 11.943 0 0 0 -2.731-7.164l-1.1 3.594a1 1 0 0 0 .379 1.114zm-13.814 9.616a1 1 0 0 0 -.949-.69l-4.139-.007a12.052 12.052 0 0 0 6.567 5.381zm11.541-.69a1 1 0 0 0 -.948.694l-1.525 4.7a12.056 12.056 0 0 0 6.615-5.4zm-4.583-4.339.731-2.253a.5.5 0 0 0 -.181-.559l-1.914-1.392a.5.5 0 0 0 -.588 0l-1.916 1.392a.5.5 0 0 0 -.182.56l.732 2.252a.5.5 0 0 0 .475.346h2.37a.5.5 0 0 0 .476-.346zm-.158 10.246a11.842 11.842 0 0 1 -1.5.1 11.934 11.934 0 0 1 -1.556-.113l-1.836-5.811a2.992 2.992 0 0 0 -2.849-2.083l-5.065-.009a11.919 11.919 0 0 1 -.532-2.106l4.472-3.178a2.991 2.991 0 0 0 1.138-3.335l-1.416-4.607a12.007 12.007 0 0 1 1.859-1.265l4.021 2.934a3 3 0 0 0 3.534 0l3.987-2.946a12.029 12.029 0 0 1 1.887 1.282l-1.416 4.601a2.991 2.991 0 0 0 1.135 3.336l4.475 3.178a11.886 11.886 0 0 1 -.532 2.105l-5.067.01a2.991 2.991 0 0 0 -2.846 2.08zm-.315-7.9a2.5 2.5 0 0 0 2.378-1.728l.731-2.253a2.492 2.492 0 0 0 -.908-2.795l-1.917-1.392a2.491 2.491 0 0 0 -2.938 0l-1.917 1.392a2.493 2.493 0 0 0 -.908 2.8l.732 2.253a2.494 2.494 0 0 0 2.377 1.723z" />
-            </svg>
-            <p>Livescore</p>
-          </a></li>
-        <li><a href="#leauges_section"  class="nav_link"  onclick="leauges1()"> <svg id="Layer_1" height="512" viewBox="0 0 24 24"
-              width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
-              <path
-                d="m14.09 16h.91c6.643 0 9-3.5 9-6.5a3.5 3.5 0 0 0 -2.84-3.433 7.564 7.564 0 0 0 .409-1 3.887 3.887 0 0 0 -.626-3.458 3.979 3.979 0 0 0 -3.214-1.609h-11.458a3.979 3.979 0 0 0 -3.214 1.612 3.887 3.887 0 0 0 -.626 3.458 7.564 7.564 0 0 0 .409 1 3.5 3.5 0 0 0 -2.84 3.43c0 3 2.357 6.5 9 6.5h.91a5.027 5.027 0 0 1 .09.921v3.079a1.883 1.883 0 0 1 -2 2h-2a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2h-1.994a1.885 1.885 0 0 1 -2.006-2v-3.08a5.025 5.025 0 0 1 .09-.92zm1.636-2.851a23.486 23.486 0 0 0 4.4-5.225 1 1 0 0 0 .374.076 1.5 1.5 0 0 1 1.5 1.5c0 2.176-1.839 4.5-7 4.5h-.056a4.805 4.805 0 0 1 .782-.851zm-6.726.851c-5.161 0-7-2.324-7-4.5a1.5 1.5 0 0 1 1.5-1.5 1 1 0 0 0 .375-.076 23.486 23.486 0 0 0 4.4 5.225 4.805 4.805 0 0 1 .781.851z" />
-            </svg>
-            <p>leauges</p>
-          </a>
-        </li>
-          <li><a href="#live_section"  class="nav_link"  onclick="live1()"> 
-            <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m15.081 13.184-4.067 2.288c-.906.51-2.025-.145-2.025-1.184v-4.575c0-1.039 1.119-1.694 2.025-1.184l4.067 2.288c.923.519.923 1.849 0 2.369zm-10.156-8.259c.391-.391.391-1.024 0-1.415s-1.024-.391-1.415 0c-4.68 4.681-4.68 12.299 0 16.98.391.391 1.024.391 1.415 0s.391-1.024 0-1.415c-3.9-3.901-3.9-10.249 0-14.15zm15.565-1.415c-.391-.391-1.024-.391-1.415 0s-.391 1.024 0 1.415c3.9 3.901 3.9 10.249 0 14.15-.391.391-.391 1.024 0 1.415s1.024.391 1.415 0c4.681-4.681 4.681-12.298 0-16.979zm-12.735 2.83c-.391-.391-1.024-.391-1.415 0-1.512 1.511-2.344 3.521-2.344 5.66s.832 4.148 2.344 5.66c.391.391 1.024.391 1.415 0s.391-1.024 0-1.415c-1.134-1.134-1.758-2.641-1.758-4.245s.624-3.111 1.758-4.245c.391-.39.391-1.024 0-1.415zm9.905 0c-.391-.391-1.024-.391-1.415 0s-.391 1.024 0 1.415c1.134 1.134 1.758 2.641 1.758 4.245s-.624 3.111-1.758 4.245c-.391.39-.391 1.024 0 1.415s1.024.391 1.415 0c1.512-1.511 2.344-3.521 2.344-5.66s-.832-4.148-2.344-5.66z"/></svg>
-            <p>Live</p>
-          </a></li>
- 
-        <li><a href="#team_section"  class="nav_link"  onclick="team1()"> <svg height="24px" viewBox="0 -960 960 960" width="24px"
-              fill="#e8eaed">
-              <path
-                d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z" />
-            </svg>
-            <p>Team</p>
-          </a></li>
-        <li><a href="#news_section"  class="nav_link"  onclick="news1()"> <svg height="24px" viewBox="0 -960 960 960" width="24px"
-              fill="#e8eaed">
-              <path
-                d="M320-120v-80H160q-33 0-56.5-23.5T80-280v-480q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v480q0 33-23.5 56.5T800-200H640v80H320ZM160-280h640v-480H160v480Zm0 0v-480 480Z" />
-            </svg>
-            <p>News</p>
-          </a></li>
-      </nav>
-      </div>
-    </section>
-    <!--==============first section end ==========-->
-
-    <!--==============first section ==========-->
-    <section id="second_section">
-      <div class="background_img"><img src="./assets/logo.png" alt=""></div>
-      <!--==============header ==========-->
-      <header>
-        <!--------logo----------->
-        <div class="logo"><img src="./assets/logo.png" alt="logo" draggable="false"></div>
-        <!-------- logo end----------->
-       <!-- ======hamburger menu ===========-->
-     
-           <div class="hambuger_menu">
-          <button id="hamburger"> 
-<svg  id="ham_open" width="152px" height="75px" viewBox="0 0 152 75" version="1.1" >
-  <g>
-    <path d="M0 0L152 0L152 9L0 9L0 0Z" id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-    <path d="M0 22L152 22L152 31L0 31L0 22Z" id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-    <path d="M0 44L152 44L152 53L0 53L0 44Z" id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-    <path d="M0 66L152 66L152 75L0 75L0 66Z" id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-  </g>
-</svg>   </button>
-          </div>
-       <!-- ======hamburger end menu ===========-->
-
-       <!--------nav btn----------->
-          <div id="nav1">
-        <nav id="navs">
-          <svg  id="ham_close"   height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-          <li class="nav_link2" ><a href="#about_section"    onclick="about1()">About</a></li>
-          <li  class="nav_link2" ><a href="#contact_section"  onclick="contact1()">Contact</a></li>
-          <li class="nav_link2" ><a href="#terms_section"   onclick="terms1()">Terms</a></li>
-        </nav>
-        </div>
-        <!--------nav btn end----------->
-
-      </header>
-      <!--==============header end==========-->
-
-      <!--==============livescore Section==========-->
-
-      <section id="livescore_section">
-
-        <div class="home_contents">
-
-          <div id="ls-widget" data-w="w_default" class="livescore-widget"></div>
-
-        </div>
-
-        </div>
-
-      </section>
-
-      <!--==============livescore Section end==========-->
-
-      <!--==============leauge & standing Section ==========-->
-      <section id="leauges_section">
-        <!--========leauge btns ======  -->
-
-        <div class="leauge_contents">
-        
-          <!--========leauge pages======  -->
-          
-<iframe src="https://www.scorebat.com/embed/livescore/?token=MjI3NTQ3XzE3NTU3MDQzMTBfZTFlNTQ3NGFiNjE5NTJmM2VkZjg5NzZkYmQzMWY5NGU5ZGM5NmQ1YQ==" frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen' style="width:100%;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe>
-
-          </div>
-          <!--========leauge pages end======  -->
-      </section>
-      <!--==============leauge & standing Section  end==========-->
-
-
-      
-<!--==============live  section==========-->
-
-<section id="live_section">
-
-<div class="live_contents">
-    <iframe src="https://www.scorebat.com/embed/videofeed/?token=MjI3NTQ3XzE3NTU3MDQzMTBfZTFlNTQ3NGFiNjE5NTJmM2VkZjg5NzZkYmQzMWY5NGU5ZGM5NmQ1YQ==" frameborder="0" allowfullscreen allow='autoplay; fullscreen' style="width:100%;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe>
-     
-</div>
-
-</section>
-<!--==============live  section end==========-->
-
-
-
-      <!--==============team Section ==========-->
-      <section id="team_section">
-
+<div id="team" class="page">
 
 <h1>Search Team Profile</h1>
+<br>
 
 <div class="search_tools">
     <input type="text" id="searchInput" placeholder="Enter Team Name">
@@ -193,29 +56,19 @@
 
 
 
-      </section>
-      <!--==============team Section end==========-->
 
 
+</div>
 
+
+    <div id="news" class="page"> <br><br>
+
+  <rssapp-wall id="t7lk4N2n5IPWEBmI"></rssapp-wall>
+    </div>
+
+    <div id="about" class="page">
       
-      <!--==============news Section ==========-->
-      <section id="news_section">
-
-        <div class="news_content">
-
-<rssapp-wall id="t7lk4N2n5IPWEBmI"></rssapp-wall>
-
-        </div>
-
-
-      </section>
-      <!--==============news Section end ==========-->
-
-      <!--==============about Section ==========-->
-      <section id="about_section">
-
-        <h1>About us</h1> <br><br>
+       <h1>About us</h1> <br><br>
         <p> Welcome to K.c Livescore , your go-to destination for real-time <br>
           football (soccer) scores, match statistics, and the latest updates from leagues around the world. <br>
           Our mission is simple: to keep you connected to the game you love — anytime, anywhere. <br> <br>
@@ -225,89 +78,14 @@
           Thank you for choosing K.c Livescore. <br>
           Let’s enjoy the beautiful game together! ⚽
         </p>
-       
+ 
 
-
-      </section>
-      <!--==============about Section end==========-->
-
-
-      <!--==============contact Section ==========-->
-
-      <section id="contact_section">
-                  <h1 id="cont_title" >Get In Touch</h1>
-             <div class="contact_contents">
-
-    <div class="contact_form"><form action="">
-      <h1>Send a Message</h1> <br>
-      <div class="form_inputs">
-      <input type="text" id="firstname" name="firstname" required placeholder="First Name" >
-      <input type="text" id="lastname"  name="lastname" required placeholder="Last Name" >
-          </div>
-<div class="form_inputs">
-      <input type="tel" id="phone" name="phone" required placeholder="Phone" >
-      <input type="email" name="email" id="email" required placeholder="Email" >
-          </div> <br>
-         <textarea name="message" id="message" placeholder="Message" ></textarea><br>
-         <button type="submit"> <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" id="sending" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="m.172,3.708C-.216,2.646.076,1.47.917.713,1.756-.041,2.951-.211,3.965.282l18.09,8.444c.97.454,1.664,1.283,1.945,2.273H4.048L.229,3.835c-.021-.041-.04-.084-.057-.127Zm3.89,9.292L.309,20.175c-.021.04-.039.08-.054.122-.387,1.063-.092,2.237.749,2.993.521.467,1.179.708,1.841.708.409,0,.819-.092,1.201-.279l18.011-8.438c.973-.456,1.666-1.288,1.945-2.28H4.062Z"/></svg>Submit</button>
-    </form></div>
-
-    <div class="contact_socials">
-      <div class="social_conts">
-      <h1>Contact Info</h1> <br>
-      <li> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm200 100q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM280-320h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"/></svg> +234 </li>
-      <li> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg> k.c livescore@gmail.com</li> <br>
-
-      <div class="socials">
-        <a href="">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
-<g>
-	<path d="M24,12.073c0,5.989-4.394,10.954-10.13,11.855v-8.363h2.789l0.531-3.46H13.87V9.86c0-0.947,0.464-1.869,1.95-1.869h1.509   V5.045c0,0-1.37-0.234-2.679-0.234c-2.734,0-4.52,1.657-4.52,4.656v2.637H7.091v3.46h3.039v8.363C4.395,23.025,0,18.061,0,12.073   c0-6.627,5.373-12,12-12S24,5.445,24,12.073z"/>
-</g>
-</svg>
-</a>
-        <a href=""> 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
-<g id="WA_Logo">
-	<g>
-		<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M20.463,3.488C18.217,1.24,15.231,0.001,12.05,0    C5.495,0,0.16,5.334,0.157,11.892c-0.001,2.096,0.547,4.142,1.588,5.946L0.057,24l6.304-1.654    c1.737,0.948,3.693,1.447,5.683,1.448h0.005c6.554,0,11.89-5.335,11.893-11.893C23.944,8.724,22.708,5.735,20.463,3.488z     M12.05,21.785h-0.004c-1.774,0-3.513-0.477-5.031-1.378l-0.361-0.214l-3.741,0.981l0.999-3.648l-0.235-0.374    c-0.99-1.574-1.512-3.393-1.511-5.26c0.002-5.45,4.437-9.884,9.889-9.884c2.64,0,5.122,1.03,6.988,2.898    c1.866,1.869,2.893,4.352,2.892,6.993C21.932,17.351,17.498,21.785,12.05,21.785z M17.472,14.382    c-0.297-0.149-1.758-0.868-2.031-0.967c-0.272-0.099-0.47-0.149-0.669,0.148s-0.767,0.967-0.941,1.166    c-0.173,0.198-0.347,0.223-0.644,0.074c-0.297-0.149-1.255-0.462-2.39-1.475c-0.883-0.788-1.48-1.761-1.653-2.059    s-0.018-0.458,0.13-0.606c0.134-0.133,0.297-0.347,0.446-0.521C9.87,9.97,9.919,9.846,10.019,9.647    c0.099-0.198,0.05-0.372-0.025-0.521C9.919,8.978,9.325,7.515,9.078,6.92c-0.241-0.58-0.486-0.501-0.669-0.51    C8.236,6.401,8.038,6.4,7.839,6.4c-0.198,0-0.52,0.074-0.792,0.372c-0.272,0.298-1.04,1.017-1.04,2.479    c0,1.463,1.065,2.876,1.213,3.074c0.148,0.198,2.095,3.2,5.076,4.487c0.709,0.306,1.263,0.489,1.694,0.626    c0.712,0.226,1.36,0.194,1.872,0.118c0.571-0.085,1.758-0.719,2.006-1.413c0.248-0.694,0.248-1.29,0.173-1.413    C17.967,14.605,17.769,14.531,17.472,14.382z"/>
-	</g>
-</g>
-</svg>
-  </a>
-
-<a href="">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="512" height="512">
-<g>
-	<path d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.308,0.06,2.655,0.358,3.608,1.311c0.962,0.962,1.251,2.296,1.311,3.608   c0.058,1.265,0.07,1.645,0.07,4.849c0,3.204-0.012,3.584-0.07,4.849c-0.059,1.301-0.364,2.661-1.311,3.608   c-0.962,0.962-2.295,1.251-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07s-3.584-0.012-4.849-0.07   c-1.291-0.059-2.669-0.371-3.608-1.311c-0.957-0.957-1.251-2.304-1.311-3.608c-0.058-1.265-0.07-1.645-0.07-4.849   c0-3.204,0.012-3.584,0.07-4.849c0.059-1.296,0.367-2.664,1.311-3.608c0.96-0.96,2.299-1.251,3.608-1.311   C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072C5.197,0.157,3.355,0.673,2.014,2.014   C0.668,3.36,0.157,5.198,0.072,7.052C0.014,8.332,0,8.741,0,12c0,3.259,0.014,3.668,0.072,4.948c0.085,1.853,0.603,3.7,1.942,5.038   c1.345,1.345,3.186,1.857,5.038,1.942C8.332,23.986,8.741,24,12,24c3.259,0,3.668-0.014,4.948-0.072   c1.854-0.085,3.698-0.602,5.038-1.942c1.347-1.347,1.857-3.184,1.942-5.038C23.986,15.668,24,15.259,24,12   c0-3.259-0.014-3.668-0.072-4.948c-0.085-1.855-0.602-3.698-1.942-5.038c-1.343-1.343-3.189-1.858-5.038-1.942   C15.668,0.014,15.259,0,12,0z"/>
-	<path d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162c0,3.403,2.759,6.162,6.162,6.162s6.162-2.759,6.162-6.162   C18.162,8.597,15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"/>
-	<circle cx="18.406" cy="5.594" r="1.44"/>
-</g></svg>
-  </a>
-
-      </div>
-</div>
-    </div>
-
-
-             </div>
-
-
-
-      </section>
-      <!--==============contact Section end==========-->
-
-      <!--==============terms Section ==========-->
-
-      <section id="terms_section">
         <h1>Terms and Conditions</h1> <br><br>
         <p>
           Welcome to K.C Livescore. By using our website, you agree to these Terms and Conditions. <br>
           Please read them carefully before using our services. <br>
 
           1. Acceptance of Terms <br>
-
 
           By accessing or using K.C livescore, you agree to comply with and be bound by these terms. <br>
           If you do not agree, please do not use our site. <br>
@@ -353,27 +131,52 @@
 
           8. Contact Us <br>
 
-
           If you have any questions, please contact us.
         </p><br><br>
 
 
-      </section>
-      <!--==============terms Section end==========-->
 
-    </section>
-    <!--==============second section end==========-->
+    </div>
   </main>
-  <!--==============main page end==========-->
+
+  <nav>
+    <button onclick="showPage('livescore')" class="active"><svg id="Layer_1" height="512" viewBox="0 0 24 24"
+              width="512" data-name="Layer 1"><path
+                d="m.024 11.523a11.943 11.943 0 0 1 2.731-7.164l1.106 3.6a1 1 0 0 1 -.382 1.114zm11.39-8.712a1 1 0 0 0 1.174 0l3.039-2.248a11.948 11.948 0 0 0 -7.28.01zm9.1 6.256 3.457 2.456a11.943 11.943 0 0 0 -2.731-7.164l-1.1 3.594a1 1 0 0 0 .379 1.114zm-13.814 9.616a1 1 0 0 0 -.949-.69l-4.139-.007a12.052 12.052 0 0 0 6.567 5.381zm11.541-.69a1 1 0 0 0 -.948.694l-1.525 4.7a12.056 12.056 0 0 0 6.615-5.4zm-4.583-4.339.731-2.253a.5.5 0 0 0 -.181-.559l-1.914-1.392a.5.5 0 0 0 -.588 0l-1.916 1.392a.5.5 0 0 0 -.182.56l.732 2.252a.5.5 0 0 0 .475.346h2.37a.5.5 0 0 0 .476-.346zm-.158 10.246a11.842 11.842 0 0 1 -1.5.1 11.934 11.934 0 0 1 -1.556-.113l-1.836-5.811a2.992 2.992 0 0 0 -2.849-2.083l-5.065-.009a11.919 11.919 0 0 1 -.532-2.106l4.472-3.178a2.991 2.991 0 0 0 1.138-3.335l-1.416-4.607a12.007 12.007 0 0 1 1.859-1.265l4.021 2.934a3 3 0 0 0 3.534 0l3.987-2.946a12.029 12.029 0 0 1 1.887 1.282l-1.416 4.601a2.991 2.991 0 0 0 1.135 3.336l4.475 3.178a11.886 11.886 0 0 1 -.532 2.105l-5.067.01a2.991 2.991 0 0 0 -2.846 2.08zm-.315-7.9a2.5 2.5 0 0 0 2.378-1.728l.731-2.253a2.492 2.492 0 0 0 -.908-2.795l-1.917-1.392a2.491 2.491 0 0 0 -2.938 0l-1.917 1.392a2.493 2.493 0 0 0 -.908 2.8l.732 2.253a2.494 2.494 0 0 0 2.377 1.723z" /></svg> Livescore</button>
+    <button onclick="showPage('leagues')">   <svg id="Layer_1" height="512" viewBox="0 0 24 24"
+              width="512"  data-name="Layer 1">
+              <path
+                d="m14.09 16h.91c6.643 0 9-3.5 9-6.5a3.5 3.5 0 0 0 -2.84-3.433 7.564 7.564 0 0 0 .409-1 3.887 3.887 0 0 0 -.626-3.458 3.979 3.979 0 0 0 -3.214-1.609h-11.458a3.979 3.979 0 0 0 -3.214 1.612 3.887 3.887 0 0 0 -.626 3.458 7.564 7.564 0 0 0 .409 1 3.5 3.5 0 0 0 -2.84 3.43c0 3 2.357 6.5 9 6.5h.91a5.027 5.027 0 0 1 .09.921v3.079a1.883 1.883 0 0 1 -2 2h-2a1 1 0 0 0 0 2h12a1 1 0 0 0 0-2h-1.994a1.885 1.885 0 0 1 -2.006-2v-3.08a5.025 5.025 0 0 1 .09-.92zm1.636-2.851a23.486 23.486 0 0 0 4.4-5.225 1 1 0 0 0 .374.076 1.5 1.5 0 0 1 1.5 1.5c0 2.176-1.839 4.5-7 4.5h-.056a4.805 4.805 0 0 1 .782-.851zm-6.726.851c-5.161 0-7-2.324-7-4.5a1.5 1.5 0 0 1 1.5-1.5 1 1 0 0 0 .375-.076 23.486 23.486 0 0 0 4.4 5.225 4.805 4.805 0 0 1 .781.851z" />
+            </svg>  Leagues</button>
+
+    <button onclick="showPage('live')">  <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m15.081 13.184-4.067 2.288c-.906.51-2.025-.145-2.025-1.184v-4.575c0-1.039 1.119-1.694 2.025-1.184l4.067 2.288c.923.519.923 1.849 0 2.369zm-10.156-8.259c.391-.391.391-1.024 0-1.415s-1.024-.391-1.415 0c-4.68 4.681-4.68 12.299 0 16.98.391.391 1.024.391 1.415 0s.391-1.024 0-1.415c-3.9-3.901-3.9-10.249 0-14.15zm15.565-1.415c-.391-.391-1.024-.391-1.415 0s-.391 1.024 0 1.415c3.9 3.901 3.9 10.249 0 14.15-.391.391-.391 1.024 0 1.415s1.024.391 1.415 0c4.681-4.681 4.681-12.298 0-16.979zm-12.735 2.83c-.391-.391-1.024-.391-1.415 0-1.512 1.511-2.344 3.521-2.344 5.66s.832 4.148 2.344 5.66c.391.391 1.024.391 1.415 0s.391-1.024 0-1.415c-1.134-1.134-1.758-2.641-1.758-4.245s.624-3.111 1.758-4.245c.391-.39.391-1.024 0-1.415zm9.905 0c-.391-.391-1.024-.391-1.415 0s-.391 1.024 0 1.415c1.134 1.134 1.758 2.641 1.758 4.245s-.624 3.111-1.758 4.245c-.391.39-.391 1.024 0 1.415s1.024.391 1.415 0c1.512-1.511 2.344-3.521 2.344-5.66s-.832-4.148-2.344-5.66z"/></svg>live</button>
+    
+    <button onclick="showPage('team')">  <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+              <path
+                d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z" />
+            </svg>team</button>
 
 
-</body>
+    <button onclick="showPage('news')"><svg height="24px" viewBox="0 -960 960 960" width="24px"
+              fill="#e8eaed">
+              <path
+                d="M320-120v-80H160q-33 0-56.5-23.5T80-280v-480q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v480q0 33-23.5 56.5T800-200H640v80H320ZM160-280h640v-480H160v480Zm0 0v-480 480Z" />
+            </svg> News</button>
 
-<!--==============link js==========-->
-<script defer src="./src/js/main.js"></script>
+
+    <button onclick="showPage('about')"> <svg  id="Filled" viewBox="0 0 24 24" width="512" height="512"><path d="M12,24A12,12,0,1,0,0,12,12.013,12.013,0,0,0,12,24ZM12,5a1.5,1.5,0,1,1-1.5,1.5A1.5,1.5,0,0,1,12,5Zm-1,5h1a2,2,0,0,1,2,2v6a1,1,0,0,1-2,0V12H11a1,1,0,0,1,0-2Z"/></svg> About</button>
+
+  </nav>
+
+  </body>
+
+
+  <!--==============link js==========-->
 <script type="text/javascript" src="https://ls.soccersapi.com/widget/res/w_default/widget.js"></script>
 <script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+<script defer src="./src/js/main.js" ></script>
+  <!-- Icons (Font Awesome CDN) -->
+  <script src="https://kit.fontawesome.com/4e5d7d5c1d.js" crossorigin="anonymous"></script>
 <!--==============link js end==========-->
 
 </html>
-

@@ -1,179 +1,18 @@
 
-//================== active class================//
-const navLinkEls=document.querySelectorAll(".nav_link");
-navLinkEls.forEach(navLinkEls =>{
-  navLinkEls.addEventListener('click',()=>{
-    document.querySelector('.active')?.classList.remove('active');
-  navLinkEls.classList.add('active');
-  });
-});
+
+//==================page function===============//
 
 
-const navLinkEls2=document.querySelectorAll(".nav_link2");
-navLinkEls2.forEach(navLinkEls2 =>{
-  navLinkEls2.addEventListener('click',()=>{
-    document.querySelector('.active2')?.classList.remove('active2');
-  navLinkEls2.classList.add('active2');
-  });
-});
-
-
-//================== active class end================//
-
-//================== menu button================//
-
-
-//================== menu button end================//
-
-
-//================== hamburger button================//
-const hamburger_btn = document.getElementById("hamburger");
-const ham_close = document.getElementById("ham_close");
-const nav1 = document.getElementById("nav1");
-
-
-hamburger_btn.addEventListener('click', menu_open)
-function menu_open(){
-   nav1.style.display="block";
-}  
-
-ham_close.addEventListener('click', menu_close)
-function menu_close(){
-   nav1.style.display="none";
-}  
-
-//================== hamburger button end================//
-
-//==============page function===================//
-const livescore_section = document.getElementById("livescore_section");
-const leauges_section = document.getElementById("leauges_section");
-const news_section = document.getElementById("news_section");
-const team_section = document.getElementById("team_section");
-const about_section = document.getElementById("about_section");
-const contact_section = document.getElementById("contact_section");
-const terms_section = document.getElementById("terms_section");
-const live_section = document.getElementById("live_section");
-
-function livescore1() {
-  livescore_section.style.display = "block";
-  livescore_section.classList.add("page_effect");
-live_section.style.display = "none";
-  leauges_section.style.display = "none";
-  team_section.style.display = "none";
-  news_section.style.display = "none";
-  about_section.style.display = "none";
-  contact_section.style.display = "none";
-  terms_section.style.display = "none";
-}
-
-function leauges1() {
-  live_section.style.display = "none";
-  livescore_section.style.display = "none";
-  leauges_section.style.display = "block";
-  leauges_section.classList.add("page_effect");
-  team_section.style.display = "none";
-  news_section.style.display = "none";
-  about_section.style.display = "none";
-  contact_section.style.display = "none";
-  terms_section.style.display = "none";
-}
-
-
-function live1() {
-  live_section.style.display = "block";
-   live_section.classList.add("page_effect");
-  livescore_section.style.display = "none";
-  leauges_section.style.display = "none";
-  team_section.style.display = "none";
-  news_section.style.display = "none";
-  about_section.style.display = "none";
-  contact_section.style.display = "none";
-  terms_section.style.display = "none";
-}
-
-
-function team1() {
-  live_section.style.display = "none";
-  livescore_section.style.display = "none";
-  leauges_section.style.display = "none";
-  team_section.style.display = "block";
-  team_section.classList.add("page_effect");
-  news_section.style.display = "none";
-  about_section.style.display = "none";
-  contact_section.style.display = "none";
-  terms_section.style.display = "none";
-}
-
-function news1() {
-  live_section.style.display = "none";
-  livescore_section.style.display = "none";
-  leauges_section.style.display = "none";
-  team_section.style.display = "none";
-  news_section.style.display = "block";
-  news_section.classList.add("page_effect");
-  about_section.style.display = "none";
-  contact_section.style.display = "none";
-  terms_section.style.display = "none";
-}
-
-function about1() {
-  live_section.style.display = "none";
-  livescore_section.style.display = "none";
-  leauges_section.style.display = "none";
-  team_section.style.display = "none";
-  news_section.style.display = "none";
-  about_section.style.display = "block";
-  about_section.classList.add("page_effect");
-  contact_section.style.display = "none";
-  terms_section.style.display = "none";
-}
-
-function contact1() {
-  livescore_section.style.display = "none";
-  live_section.style.display = "none";
-  leauges_section.style.display = "none";
-  team_section.style.display = "none";
-  news_section.style.display = "none";
-  about_section.style.display = "none";
-  contact_section.style.display = "block";
-  contact_section.classList.add("page_effect");
-  terms_section.style.display = "none";
-}
-
-function terms1() {
-  livescore_section.style.display = "none";
-  leauges_section.style.display = "none";
-  team_section.style.display = "none";
-  live_section.style.display = "none";
-  news_section.style.display = "none";
-  about_section.style.display = "none";
-  contact_section.style.display = "none";
-  terms_section.style.display = "block";
-  terms_section.classList.add("page_effect");
-}
-//==============page function end===================//
-
-//================== leauge section================//
-(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'scorebat-jssdk'));
-//================== leauge section end================//
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+    }
 
 
 
-//================== live section================//
-(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'scorebat-jssdk'));
-//================== live section end================//
+//==================page function end===============//
 
 
 //================== team section================//

@@ -63,3 +63,50 @@ function displayTeamProfile(team, venue) {
 }
 //================== team section end================//
 
+
+//================== news section ================//
+
+const apiKey = "221a9348cdf44b1b8440e097c7988fee"; // Replace with your NewsAPI.org key
+    const apiUrl = `https://newsapi.org/v2/everything?q=soccer&language=en&sortBy=publishedAt&apiKey=${apiKey}`;
+    const newsContainer = document.getElementById("news-container");
+
+    // Fetch news or get from localStorage
+    async function fetchNews() {
+      let cachedNews = localStorage.getItem("soccerNews");
+
+      if (cachedNews) {
+        displayNews(JSON.parse(cachedNews));
+      } else {
+        try {
+          const response = await fetch(apiUrl);
+          const data = await response.json();
+          if (data.articles) {
+            localStorage.setItem("soccerNews", JSON.stringify(data.articles));
+            displayNews(data.articles);
+          }
+        } catch (error) {
+          console.error("Error fetching news:", error);
+        }
+      }
+    }
+
+    // Display news
+    function displayNews(articles) {
+      newsContainer.innerHTML = "";
+      articles.forEach(article => {
+        const card = document.createElement("div");
+        card.className = "news-card";
+        card.innerHTML = `
+          <img src="${article.urlToImage || 'https://via.placeholder.com/400'}" alt="News Image">
+          <div class="news-content">
+            <h3>${article.title}</h3>
+            <p>${article.description || "No description available."}</p>
+            <a href="${article.url}" target="_blank">Read Full Article</a>
+          </div>
+        `;
+        newsContainer.appendChild(card);
+      });
+    }
+
+    fetchNews();
+//================== news section end================//

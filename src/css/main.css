@@ -155,6 +155,53 @@ header img{
  /* ============team section end================= */
 
 
+ .news-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .news-card {
+      background: var(--light-mode);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .news-card:hover {
+      transform: scale(1.02);
+    }
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .news-content {
+      padding: 15px;
+    }
+    .news-content h3 {
+      font-size: 18px;
+      margin: 0 0 10px;
+      color: #333;
+    }
+    .news-content p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .news-content a {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--light-mode);
+      background:var(--btn-color);
+      padding: 8px 12px;
+      box-shadow: var(--box-shadows);
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .news-content a:hover {
+      background: var(--hover-color);
+    }
 
     main {
       flex: 1;

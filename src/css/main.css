@@ -129,6 +129,9 @@ main {
     nav button:hover {color:#00b4d8;}
     nav i {font-size:20px;}
 
+#ls-widget{
+    width: 100%;
+  }
 
 
 
@@ -146,6 +149,13 @@ main {
         text-align:left;
         padding-left:30px;
       }
+
+.live_cont{
+    width: 100%;
+  }
+
+
+
 
       nav {
         flex-direction: column;
@@ -210,23 +220,23 @@ main {
 @media (max-width: 768px) {
 
 #leagues iframe{
-    height:660px;
+    height:860px;
   }
 
   #ranking iframe{
-    height:660px;
+    height:860px;
   }
   
-  #ls-widget{
+  .live_cont{
     width: 100%;
   }
 
   #table iframe{
-    height:660px;
+    height:860px;
   }
   
 #other iframe{
-    height:660px;
+    height:860px;
   }
 }
    /*==========mobile responsiveness end========================*/

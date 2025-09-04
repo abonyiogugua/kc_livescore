@@ -224,7 +224,7 @@ main {
   }
 
   #ranking iframe{
-    height:860px;
+    height:100%;
   }
   
   .live_cont{
@@ -232,11 +232,11 @@ main {
   }
 
   #table iframe{
-    height:860px;
+    height:100%;
   }
   
 #other iframe{
-    height:860px;
+    height:100%;
   }
 }
    /*==========mobile responsiveness end========================*/
